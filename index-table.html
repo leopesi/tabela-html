@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Templete de Tabela</title>
+    <link href="styles-table.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1>Templete de Tabela</h1>
+  <table id="Geodemografia">
+    <caption>Dados Geodemográficos</caption>
+    <tr>
+      <th scope="col">País</th>
+      <th scope="col">População <br>(2011)</th>
+      <th scope="col">PIB <br>(2011)</th>
+      <th scope="col">Crescimento PIB <br>(2012)</th>
+      <th scope="col">GINI <br>(2011)</th>
+      <th scope="col">IDH <br>(2011)</th>
+    </tr>
+    <tr>
+      <th scope="row">Brasil</th>
+      <td>194 milhões</td>
+      <td>US$ 2,5 trilhões</td>
+      <td>1,5%</td>
+      <td>0,539</td>
+      <td>0,718(alto)</td>
+    </tr>
+    <tr>
+      <th scope="row">China</th>
+      <td>1,34 bilhões</td>
+      <td>US$ 7,32 trilhões</td>
+      <td>7,8%</td>
+      <td>0,474</td>
+      <td>0,687(médio)</td>
+    </tr>
+    <tr>
+      <th scope="row">EUA</th>
+      <td>313,8 milhões</td>
+      <td>US$ 15,09 trilhões</td>
+      <td>2,2%</td>
+      <td>0,450</td>
+      <td>0,910(muito alto)</td>
+    </tr>
+  </table>
+
+    <hr>
+
+  <table id="Regiões">
+    <colgroup>
+        <col span="2">
+        <col style="background-color:#97DB9A;">
+        <col style="width:42px;">
+        <col style="background-color:#97DB9A;">
+        <col style="background-color:#DCC48E; border:4px solid #C1437A;">
+        <col span="2" style="width:42px;">
+    </colgroup>
+
+    <caption>População</caption>
+    <tr>
+      <th scope="col">Pais</th>
+      <th scope="col">Estado</th>
+      <th scope="col">Cidade</th>
+      <th scope="col">População</th>
+    </tr>
+    <tr>
+      <th rowspan="9">Brasil</th>
+      <!-- Estado de Minas Gerais -->
+      <th rowspan="3" scope="rowgroup">Minas Gerais</th>
+        <td scope="row">Araguari</td>
+        <td>120.000</td>
+    </tr>
+    <tr>
+        <td scope="row">Indianóplis</td>
+        <td>6.700</td>
+    </tr>
+    <tr>
+        <td scope="row">Estrela do Sul</td>
+        <td>8.000</td>
+    </tr>
+    <tr>
+      <!-- Estado de São Paulo -->
+      <th rowspan="2" scope="rowgroup">São Paulo</th>
+        <td scope="row">Cotia</td>
+        <td>170.500</td>
+      </tr>
+      <tr>
+        <td scope="row">São Paulo <br>Capital</td>
+        <td>12.000.000</td>
+      </tr>
+    <tr>
+      <!-- Estado do Paraná -->
+      <th rowspan="3" scope="rowgroup">Paraná</th>
+      <td scope="row">Pato Branco</td>
+      <td>82.881</td>
+      </tr>
+    <tr>
+      <td scope="row">Londrina</td>
+      <td>485.822</td>
+    </tr>
+  </table>
+  </body>
+</html>
